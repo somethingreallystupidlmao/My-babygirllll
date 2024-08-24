@@ -1,0 +1,58 @@
+body {
+    background-color: hotpink;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars on body */
+}
+
+.container {
+    text-align: center;
+}
+
+.rotating-image img {
+    width: 100%;
+    max-width: 300px; /* Adjust size as needed */
+    animation: rotate 3s infinite alternate ease-in-out;
+}
+
+.scrolling-content {
+    margin-top: 20px; /* Space between images */
+}
+
+.scrolling-content p.click-here {
+    font-size: 20px; /* One size bigger */
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Hattori', sans-serif;
+}
+
+.scrolling-content a img {
+    width: 80px; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto;
+    transition: opacity 0.3s;
+}
+
+.scrolling-content a img:hover {
+    opacity: 0.8;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+
+

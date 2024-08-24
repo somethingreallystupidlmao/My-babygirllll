@@ -1,0 +1,48 @@
+/* CSS for Page 5 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set background color to black */
+    overflow: hidden; /* Prevent scrollbars */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+.bouncing-heart-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.heart-link {
+    position: absolute;
+    display: block;
+    width: 50px; /* Size of the heart */
+    height: 50px; /* Ensure size consistency */
+}
+
+.bouncing-heart {
+    position: absolute;
+    width: 50px; /* Adjust size of the heart */
+    height: auto;
+    animation: bounce 10s linear infinite; /* Bouncing animation */
+}
+
+/* Keyframes for continuous bouncing effect */
+@keyframes bounce {
+    0% {
+        transform: translate(calc(50vw - 25px), calc(50vh - 25px)); /* Start at center */
+    }
+    25% {
+        transform: translate(calc(100vw - 50px), calc(50vh - 25px)); /* Center of the right side */
+    }
+    50% {
+        transform: translate(calc(50vw - 25px), calc(100vh - 50px)); /* Center of the bottom side */
+    }
+    75% {
+        transform: translate(calc(0px), calc(50vh - 25px)); /* Center of the left side */
+    }
+    100% {
+        transform: translate(calc(50vw - 25px), calc(0px)); /* Center of the top side */
+    }
+}

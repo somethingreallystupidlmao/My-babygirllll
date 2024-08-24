@@ -1,0 +1,44 @@
+/* Font Face Declaration */
+@font-face {
+    font-family: 'ClassyFont';
+    src: url('../fonts/ClassyFont-Regular.woff2') format('woff2'),
+         url('../fonts/ClassyFont-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../images/Howl.jpg') repeat; /* Set background image to repeat */
+    font-family: 'ClassyFont', serif; /* Classy font */
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    padding: 20px;
+    margin: 50px auto; /* Center the box horizontally */
+    max-width: 600px; /* Set a max width for the box */
+    color: black; /* Black text color */
+    text-align: center; /* Center text */
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image {
+    width: 80%; /* Adjust size of images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between images */
+}
+
+.angel {
+    font-size: 1.5em; /* Adjust size of the "Angel" text */
+    margin-top: 10px;
+}
+
+.ps {
+    font-size: 1.2em; /* Adjust size of the P.S. text */
+    margin-top: 20px;
+}

@@ -1,0 +1,65 @@
+/* Font Face Declaration for Helsa Display */
+@font-face {
+    font-family: 'Helsa Display';
+    src: url('../fonts/Helsa-Display.woff2') format('woff2'),
+         url('../fonts/Helsa-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helsa Display', sans-serif;
+    overflow: hidden;
+}
+
+/* Background image container */
+.background-image {
+    background: url('../images/9.jpg') no-repeat center center;
+    background-size: cover;
+    height: 736px; /* Height of iPhone 8 Plus screen in pixels */
+    width: 414px;  /* Width of iPhone 8 Plus screen in pixels */
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Content box styles */
+.content-box {
+    padding: 20px;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 80%;
+    color: black; /* Set text color to black */
+    background: transparent; /* Ensure the text box is not visible */
+}
+
+/* Bottom image container styles */
+.image-container {
+    position: absolute;
+    bottom: 10px; /* Adjust bottom spacing as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Bottom image styles with tilting animation */
+.bottom-image {
+    width: 80px; /* Set width for the bottom image */
+    height: auto; /* Maintain aspect ratio */
+    animation: tilt 3s infinite alternate; /* Add tilting animation */
+}
+
+@keyframes tilt {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
